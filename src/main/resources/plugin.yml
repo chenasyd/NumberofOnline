@@ -1,0 +1,26 @@
+name: NumberofOnline
+version: '1.0-SNAPSHOT'
+main: org.a.numberofOnline.NumberofOnline
+api-version: '1.20'
+
+# 添加 PlaceholderAPI 支持声明
+depend:
+  - PlaceholderAPI
+
+commands:
+  numberofonline:
+    description: NumberofOnline 插件命令
+    usage: /numberofonline [reload|logging]
+    aliases: [noo]
+    permission: numberofonline.command
+
+permissions:
+  numberofonline.command:
+    description: 允许使用 NumberofOnline 基本命令
+    default: true
+  numberofonline.reload:
+    description: 允许重新加载 NumberofOnline 配置
+    default: op
+  numberofonline.logging:
+    description: 允许切换 NumberofOnline 日志输出
+    default: op

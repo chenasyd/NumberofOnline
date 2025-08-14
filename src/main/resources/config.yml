@@ -1,0 +1,25 @@
+# NumberofOnline 配置文件
+
+# 子服务器列表，用于获取玩家数量
+servers:
+  - lobby
+  - survival
+  - creative
+  - minigames
+
+# 服务器群组配置，可以将多个服务器的玩家数量相加
+groups:
+  survival-group:
+    - survival
+    - creative
+  minigames-group:
+    - minigames
+    - lobby
+
+# 更新间隔（秒）
+update-interval: 10
+
+# 日志设置
+logging:
+  # 是否在控制台输出玩家数量更新日志
+  enable: true
